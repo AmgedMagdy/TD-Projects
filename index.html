@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Projects - Amged@TD</title>
+  <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+  <!-- https://fonts.google.com/ -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="tm-container">
+    <div class="tm-row">
+
+      <!-- Menu Page -->
+
+
+      <div id="cold" class="tm-tab-content">
+        <div class="tm-list">
+          <!-- Prj 1 -->
+          <div class="tm-list-item">
+            <img src="Projects/AliiHussien01/cover.jpg" alt="Image" class="tm-list-item-img">
+            <div class="tm-black-bg tm-list-item-text">
+              <h3 class="tm-list-item-name">Ali Computer Store Website<span class="tm-list-item-price">*****</span></h3>
+              <p class="tm-list-item-description">Made by Ali Hussien, This is Ali's first project and one of the best
+                projects among his peers</p>
+              <a href="/Projects/AliiHussien01/index.html" target="_blank">Show Project</a>
+            </div>
+          </div>
+          <!-- Prj 2 -->
+          <div class="tm-list-item">
+            <img src="Projects/Marsilino01/OIP (1).jpeg" alt="Image" class="tm-list-item-img">
+            <div class="tm-black-bg tm-list-item-text">
+              <h3 class="tm-list-item-name">Marsilino Gaming Website<span class="tm-list-item-price">*****</span></h3>
+              <p class="tm-list-item-description">Made by Marsilino, what makes it so special is that marsilino added
+                extra pages to enhance user experience.</p>
+              <a href="/Projects/Marsilino01/index.html" target="_blank">Show Project</a>
+            </div>
+          </div>
+
+           <!-- Prj 3 -->
+           <div class="tm-list-item">
+            <img src="Projects/Ahmed-Saif01/OIP.jpg" alt="Image" class="tm-list-item-img">
+            <div class="tm-black-bg tm-list-item-text">
+              <h3 class="tm-list-item-name">Saif Skating Website<span class="tm-list-item-price">****</span></h3>
+              <p class="tm-list-item-description">Made by Ahmed Abdullah (Saif) to show his journey in skating.</p>
+              <a href="/Projects/Ahmed-Saif01/index.html" target="_blank">Show Project</a>
+            </div>
+          </div>
+
+           <!-- Prj 4 -->
+           <div class="tm-list-item">
+            <img src="Projects/MohamedAdel01/cover2.jpg" alt="Image" class="tm-list-item-img">
+            <div class="tm-black-bg tm-list-item-text">
+              <h3 class="tm-list-item-name">Mohamed's Tennis Story<span class="tm-list-item-price">****</span></h3>
+              <p class="tm-list-item-description">Made by Mohamed Adel to show his passion towards tennis,.</p>
+              <a href="/Projects/MohamedAdel01/index.html" target="_blank">Show Project</a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <!-- end Drink Menu Page -->
+    </div>
+
+
+    <!-- Background video -->
+    <div class="tm-video-wrapper">
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+      <video autoplay muted loop id="tm-video">
+        <source src="video/wave-cafe-video-bg.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+
+      function setVideoSize() {
+        const vidWidth = 1920;
+        const vidHeight = 1080;
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+        const tempVidWidth = windowHeight * vidWidth / vidHeight;
+        const tempVidHeight = windowWidth * vidHeight / vidWidth;
+        const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth : windowWidth;
+        const newVidHeight = tempVidHeight > windowHeight ? tempVidHeight : windowHeight;
+        const tmVideo = $('#tm-video');
+
+        tmVideo.css('width', newVidWidth);
+        tmVideo.css('height', newVidHeight);
+      }
+
+      function openTab(evt, id) {
+        $('.tm-tab-content').hide();
+        $('#' + id).show();
+        $('.tm-tab-link').removeClass('active');
+        $(evt.currentTarget).addClass('active');
+      }
+
+      function initPage() {
+        let pageId = location.hash;
+
+        if (pageId) {
+          highlightMenu($(`.tm-page-link[href^="${pageId}"]`));
+          showPage($(pageId));
+        }
+        else {
+          pageId = $('.tm-page-link.active').attr('href');
+          showPage($(pageId));
+        }
+      }
+
+      function highlightMenu(menuItem) {
+        $('.tm-page-link').removeClass('active');
+        menuItem.addClass('active');
+      }
+
+      function showPage(page) {
+        $('.tm-page-content').hide();
+        page.show();
+      }
+
+      $(document).ready(function () {
+
+        /***************** Pages *****************/
+
+        initPage();
+
+        $('.tm-page-link').click(function (event) {
+
+          if (window.innerWidth > 991) {
+            event.preventDefault();
+          }
+
+          highlightMenu($(event.currentTarget));
+          showPage($(event.currentTarget.hash));
+        });
+
+
+        /***************** Tabs *******************/
+
+        $('.tm-tab-link').on('click', e => {
+          e.preventDefault();
+          openTab(e, $(e.target).data('id'));
+        });
+
+        $('.tm-tab-link.active').click(); // Open default tab
+
+
+        /************** Video background *********/
+
+        setVideoSize();
+
+        // Set video background size based on window size
+        let timeout;
+        window.onresize = function () {
+          clearTimeout(timeout);
+          timeout = setTimeout(setVideoSize, 100);
+        };
+
+        // Play/Pause button for video background      
+        const btn = $("#tm-video-control-button");
+
+        btn.on("click", function (e) {
+          const video = document.getElementById("tm-video");
+          $(this).removeClass();
+
+          if (video.paused) {
+            video.play();
+            $(this).addClass("fas fa-pause");
+          } else {
+            video.pause();
+            $(this).addClass("fas fa-play");
+          }
+        });
+      });
+
+    </script>
+</body>
+
+</html>

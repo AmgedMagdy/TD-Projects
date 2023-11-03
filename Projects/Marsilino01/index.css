@@ -1,0 +1,265 @@
+
+h1{
+     color: rgb(255, 0, 0);
+}
+
+.welcome-text{
+    background-color: rgb(0, 255, 255);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+img{
+    border: 5px  rgb(255, 0, 0);
+    border-radius: 8px;
+    border-style:  double ;
+    box-shadow: 40px 50px 120px rgb(165, 148, 148) ;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+.pic{
+    opacity: 0.8;
+
+}
+
+
+.pic:hover{
+    opacity: 1;
+
+}
+
+.main-header {   
+    background-image: linear-gradient    
+    (rgb(216, 31, 31), rgb(89, 0, 255));   
+    position: fixed;   
+    top: 0;   
+    right: 0;    
+    left: 0;   
+    height: 48px; 
+}
+.header-info {   
+    text-align: left;   
+    color: rgb(255, 17, 0);   
+    position: absolute;   
+    left: 0;   
+    padding: 0;   
+    margin: 14-x 14px 0 14px;
+}
+
+    .header-info a {   
+    padding: 0;   
+    text-decoration: 
+    none;
+}
+
+    .header-info a:hover {  
+     background-color: rgb(38, 0, 252);
+    }
+
+    nav {
+        position: absolute;
+        right: 0;
+        display: flex;
+       }
+       a {
+        text-decoration: none;
+        color: rgb(255, 0, 0);
+        padding: 15px;
+        float: left;
+       }
+       a:hover {
+        background-color: rgb(0, 17, 253);
+       }
+
+
+
+.Welcome {margin-top: 10%;}
+.title {
+    font-style: italic;
+    color: rgb(0, 0, 0);
+   }
+   h1, h2, h3, p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+   }
+   .items {
+    display:flex;
+    justify-content: center;
+    background-image: url("OIP.jpeg");
+    background-size: cover;
+    border-radius: 410px;
+    padding: 10px;
+   }
+   .item {
+    display: block;
+    flex-direction: column;
+   }
+   .portrait {
+    max-width: 100%;
+    max-height: 350px;
+   }
+   .landscape {
+    width: 350px;
+    height: 240px;
+   }
+
+   .main-header{
+    background-color:rgb(58, 57, 63);
+   }
+
+   body { 
+    background-image: url("");
+    background-size: cover; 
+   }
+
+   .main-pic{
+    margin-top: 2%;
+   }
+
+   table, tr, th, td {
+    border: 2px solid blue;
+    border-collapse:collapse; 
+   padding: 10px;
+   
+   }
+
+   th {
+    color: white;
+    background-color: cadetblue;
+    }
+
+
+    tr, th {
+        height: 50px;
+        text-align:center;
+        vertical-align:center;
+    }
+
+    table {
+        width: 700px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .container {
+        display: flex;
+        padding: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: aqua;
+
+    }
+    .tab1 {
+        margin-right: 60px;
+        background-color:silver;
+        padding: 20px;
+        border-radius: 50px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .tab3 {
+        margin-right: 60px;
+        background-color: gold;
+        padding: 20px;
+        border-radius: 50px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .tab2 {
+        margin-right: 60px;
+        background-color: silver;
+        padding: 20px;
+        border-radius: 50px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .list {
+        color: rgb(0, 0, 0);
+        
+    }
+
+    div.about {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        background-color: blanchedalmond;
+        width: 80%;
+       }
+
+       .about {
+        text-align: left;
+        color: black;
+        padding: 10px;
+        width: 100%;
+        vertical-align: middle;
+       
+       }
+       
+       img.about-us {
+        width: 300px;
+        margin: 200px;
+       }   
+       footer {
+        background-color: rgb(9, 196, 171);
+       }
+
+       .main-footer { 
+        display: flex;
+        justify-content: center;
+        width: 100%;
+       }
+
+       .left-footer {
+        margin-right: auto; 
+        margin-left: 40px;
+       }
+
+       .right-footer {
+        margin-left: auto;
+        margin-right: 40px;
+       }
+
+       .center-footer {
+        margin-left: 20px;
+        margin-right: 20px;
+       }
+
+       .info-left {
+        color: rgb(219, 84, 75);
+        text-align: left;
+        width: 100%;
+       }
+
+    *{
+        font-family: 'Dela Gothic One', cursive;
+        font-family: 'Lobster', cursive;
+    }
+
+    button{
+        margin-top: 5px;
+        background-color: rgb(0, 0, 0);
+        color: aliceblue;
+        transform: scale(1.5, 1.5);
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    button:hover{
+        margin-top: 5px;
+        color: rgb(0, 0, 0);
+        background-color: aliceblue;
+        transform: scale(1.7, 1.7);
+    }
+    .info-right {
+        <i class="far fa-phone-alt"></i>
+    }
+
+

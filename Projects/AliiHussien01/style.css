@@ -1,0 +1,325 @@
+* {
+    font-family: ‘Dancing Script’, cursive;
+}
+
+@media (max-width: 600px) {
+    * {
+    font-size: 2vw;
+    margin: 2px;
+    }
+}    
+
+h1,
+p {
+    text-align: center;
+
+}
+
+img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.logo {
+    border-radius: 60px;
+}
+
+.describtion{
+    display: table;
+    margin: auto;
+}
+.describtion1{
+    color:rgb(255, 255, 255);
+    text-align: left;
+
+}
+h1.describtion1{
+    font-size: 70px;
+}
+
+.describtion2 {
+    color: rgb(253, 249, 248);
+    background-color: rgb(12, 12, 11);
+    margin: 50px;
+    padding: 50px;
+    border: 6px dotted rgba(232, 239, 245, 0.856);
+}
+
+#info {
+    color: rgb(250, 244, 244) (100000, 115, 226);
+}
+
+.main-header {
+    background-color: rgb(8, 8, 8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+}
+
+.header-info {
+    text-align: left;
+    color: rgb(7, 6, 6);
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 14-x 14px 0 14px;
+}
+
+.header-info a {
+    padding: 0;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.header-info a:hover {
+    background-color: transparent
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(126, 71, 182);
+    float: left;
+    margin-right: 15px;
+    padding: 10px;
+    font-size: \;
+    
+}
+
+a:hover {
+    background-color: rgb(245, 231, 231);
+}
+
+.jumbotron {
+    padding: 100px;
+    background-image: url("cover.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+
+.title {
+    font-style: italic;
+    color: rgb(10, 9, 9);
+}
+
+h1,
+h2,
+h3,
+p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    background-image: url('2007.jpg');
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.item {
+    display: block;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.portrait {
+    width: 260px;
+    height: 350px;
+   
+    border: 3px double rgb(247, 237, 237);
+    border-radius: 25px;
+    box-shadow: 5px 5px 56px rgb(139, 97, 238);
+    opacity: 0.8;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.portrait:hover {
+    opacity: 1;
+}
+
+
+
+div.product-text {
+    background-color: rgb(86, 115, 245);
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h3.product-text,
+p.product-text {
+    color: rgb(17, 17, 17);
+}
+
+
+table,
+tr,
+th,
+td {
+    border: 3px solid rgb(10, 10, 10);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+h1.featured-text {
+    font: bolder;
+    font-style: italic;
+    font-size: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+
+}
+
+p.featured-text {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+}
+
+
+
+/* Table Section */
+
+
+
+.table-div {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+
+table {
+    margin-top: 40px;
+
+    width: 700px
+}
+
+th {
+    background-color: black;
+    color: aliceblue;
+}
+
+.tab {
+    background-color: rgb(10, 10, 10);
+    width: fit-content;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+h1.name {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: rgb(241, 233, 233);
+}
+
+h2.price {
+    font-size: 38px;
+    color: rgb(241, 235, 235);
+}
+
+.list {
+    list-style-type: disc;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.list li {
+    margin-top: 5px;
+    color: rgb(245, 232, 232);
+}
+
+hr {
+    height: 7px;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(80, 69, 68);
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+
+
+
+button {
+    background-color: white;
+    border: 2px solid rgb(10, 10, 10);
+    color: black;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 5px 8px;
+
+}
+
+button:hover {
+    background-color: rgb(255, 253, 253);
+    color: rgb(10, 9, 9);
+    transform: scale(1.3, 1.3);
+}
+
+.table-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/* About Section */
+
+.about-div {
+    background-color: rgb(14, 13, 13);
+    display: flex;
+    margin: 5px;
+    padding: 30px;
+    align-items: center;
+}
+
+.about {
+    text-align: left;
+    color: rgb(241, 239, 239);
+    padding: 10px;
+    width: 100%;
+}
+
+div.image-about {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+img.about-us {
+    width: 300px;
+}
+
+
+footer {
+    background-color: beige;
+    background-size: cover;
+    margin-top: 30px;
+    padding: 20px;
+}

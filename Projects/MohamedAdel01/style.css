@@ -1,0 +1,242 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+h1, p {
+    text-align:center;
+
+    }
+img {
+    background-image: 100px;
+    size:center ;
+repeat : no repeats ;
+border-radius:100spx;
+   max-width: 100%;
+  margin-left: auto;
+    margin-right: auto;
+    display:flex;
+   }
+
+   .first-img{
+    border-radius: 20px ;
+   }
+
+.describtion {
+    color: green;
+}
+
+#info{
+    color: blue;
+    background-color: yellowgreen;
+    margin:10px ;
+    padding: 5px; ;
+    border: 5px dotted  ;
+}
+
+.main-header {
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    right: 10px; 
+    left: 0;
+    height: 48px; 
+   }
+   .header-info {
+    text-align: left;
+    color: rgb(219, 84, 75);
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 14-x 14px 0 14px;
+   }
+   .header-info a {
+    padding: 0;
+    text-decoration: none;
+   }
+   .header-info a:hover {
+    background-color: transparent
+   }
+
+   nav {
+    position: absolute;
+    right: 0;
+    display: block;
+   }
+   a {
+    text-decoration: none;
+    color: rgb(219, 84, 75);
+    padding: 15px;
+    float: left;
+   }
+   a:hover {
+    background-color: burlywood;
+   }
+
+   .jump{
+    margin-top: 10%;
+    border-radius: 10px;
+   }
+   .title {
+    font-style: italic;
+    color: rgb(0, 0, 0);
+   }
+   h1, h2, h3, p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+   }
+   .items {
+    display:flex;
+    justify-content: center;
+    background-color: url(cover2.jpg);
+    background-size: cover;
+    padding: 50px;
+     border-radius: 20px;
+
+   }
+   .item {
+    display: block ;
+    flex-direction: column;
+   }
+
+   .portrait:hover{
+    opacity: 1;
+   }
+
+   .portrait {
+   max-width: 260px;
+   height: 350px;
+    border : 5px double black;
+    margin-right: 3px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 55px rgb(88, 3, 3);
+    opacity: 0.3;
+   }
+   .portrait:hover{
+    opacity: 2;
+   }
+  
+
+   body { 
+    background-image: url("1080.png");
+    background-size: cover;
+    
+
+   }
+   
+
+
+
+/* -------------- Meeting 4 TABLES -------------  */
+
+
+table, tr, th, td {
+ border: 2px solid blue; 
+ border-collapse:collapse ;
+ text-align: center;
+ 
+}
+th{
+    background-color: rgb(6, 6, 153);
+    color:red
+
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.container{
+    display: block;
+
+}
+.tab{
+    margin-right: 30px;
+    background-color: white;
+    color :black
+
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   }
+   .tab {
+    background-color: gainsboro;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+
+    border-radius: 50px;
+   }
+   h1.name {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: black;
+   }
+   h2.price {
+    font-size: 38px;
+    color: black;
+   }
+   .list {
+    margin-bottom: 50px;
+    text-align: left;
+   }
+
+
+
+   .list li {
+    margin-top: 5px;
+    color: rgb(235, 10, 10);
+   }
+   hr {
+    height: 7px;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(219, 84, 75);
+    border: none;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+button {
+    background-color: rgba(219, 85, 75, 0.616);
+    border-radius: 8px;
+    color: white;
+    padding: 8px;
+    border: none;
+    font-size: 20pt;
+   }
+   button:hover {
+    transform: scale(1.02, 1.02);
+    background-color: rgb(219, 85, 75);
+    cursor: pointer;
+   }
+   button {
+    background-color: rgba(219, 85, 75, 0.616);
+    border-radius: 8px;
+    color: white;
+    padding: 8px;
+    border: none;
+    font-size: 20pt}
+    
+
+    .about-div{
+        display: flex;
+        background-color: rgb(128, 69, 69);
+        
+        margin-top: 50px;
+        padding: 30px;
+        border-radius:50px;
+    }
+    .am {
+        border-radius: 40px;
+    }
+    .mohamed-adel{
+        display: flex ;
+        background-color: red;
+        margin-top: 30px;
+    }
+    .moha{
+        border-radius: 50px;
+    }
